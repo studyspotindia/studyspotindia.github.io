@@ -10,7 +10,7 @@ export  const authStudentSignup = (signupData) => async (dispatch) => {
     dispatch({ type: types.AUTH_STUDENT_SIGNUP_REQUEST });
 
     try {
-        const response = await axios.post('https://tricky-plum-garters.cyclic.cloud/student/signup', signupData);
+        const response = await axios.post('https://filthy-rose-shoe.cyclic.cloud/student/signup', signupData);
         const data = response.data;
         console.log(data, 'hello signup');
 
@@ -31,7 +31,7 @@ export const authTeacherSignup = (signupData) => async (dispatch) => {
     dispatch({ type: types.AUTH_TEACHER_SIGNUP_REQUEST });
 
     try {
-        const response = await axios.post('https://tricky-plum-garters.cyclic.cloud/tutor/signup', signupData);
+        const response = await axios.post('https://filthy-rose-shoe.cyclic.cloud/tutor/signup', signupData);
         const data = response.data;
         console.log(data, 'hello signup');
 
@@ -54,7 +54,7 @@ export const AuthStudentLogin = (loginData) => async (dispatch) => {
     dispatch({ type: types.AUTH_STUDENT_LOGIN_REQUEST });
 
     try {
-        const response = await axios.post('https://tricky-plum-garters.cyclic.cloud/student/login', loginData, {
+        const response = await axios.post('https://filthy-rose-shoe.cyclic.cloud/student/login', loginData, {
             withCredentials: true // This will include cookies in the request
         });
         const data = response.data;
@@ -94,7 +94,7 @@ export const AuthTeacherLogin = (loginData) => async (dispatch) => {
     dispatch({ type: types.AUTH_TEACHER_LOGIN_REQUEST });
 
     try {
-        const response = await axios.post('https://tricky-plum-garters.cyclic.cloud/tutor/login', loginData, {
+        const response = await axios.post('https://filthy-rose-shoe.cyclic.cloud/tutor/login', loginData, {
             withCredentials: true // This will include cookies in the request
         });
         const data = response.data;
@@ -148,7 +148,7 @@ export const checkTokenPresence = () => (dispatch) => {
      
 //       console.log(cookieUserID,"fetch")
 //       // Make a GET request to your backend to fetch the student data using the user ID
-//       const response = await axios.get(`https://tricky-plum-garters.cyclic.cloud/student/${cookieUserID}`);
+//       const response = await axios.get(`https://filthy-rose-shoe.cyclic.cloud/student/${cookieUserID}`);
   
 //       const studentData = response.data; // Assuming the API returns student data
 

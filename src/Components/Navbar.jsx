@@ -85,7 +85,7 @@ export default function Navbar() {
 
         // Wait for a short period (e.g., 500 milliseconds) before making the fetch request
         if (cookieUserID) {
-          const response = await axios.get(`https://tricky-plum-garters.cyclic.cloud/${userType}/${cookieUserID}`);
+          const response = await axios.get(`https://filthy-rose-shoe.cyclic.cloud/${userType}/${cookieUserID}`);
           const studentData = response.data;
           setData(studentData);
         }
