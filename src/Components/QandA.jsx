@@ -26,7 +26,7 @@ export default function QandA() {
 
 
     return (
-        <Box h="auto">
+        <Box h="auto" style={{overflowX:"hidden"}}>
 
 
 

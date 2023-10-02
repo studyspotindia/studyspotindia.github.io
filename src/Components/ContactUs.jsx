@@ -17,7 +17,7 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <Box id="contactus" width="100%" mt="50px">
+    <Box id="contactus" width="100%" mt="50px"  style={{overflowX:"hidden"}}>
       <Box className="contact"  width="100%"  
       //border="1px solid yellow"
       >
